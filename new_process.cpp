@@ -6,8 +6,8 @@
 int main()
 {
 	UNICODE_STRING NtImagePath, CurrentDirectory, CommandLine;
-	RtlInitUnicodeString(&NtImagePath, (PWSTR)L"\\??\\C:\\Windows\\System32 \\svchost.exe");
-	RtlInitUnicodeString(&CurrentDirectory, (PWSTR)L"\\C:\\Windows\\System32 ");
+	RtlInitUnicodeString(&NtImagePath, (PWSTR)L"\\??\\C:\\Windows\\System32.\\svchost.exe");
+	RtlInitUnicodeString(&CurrentDirectory, (PWSTR)L"\\C:\\Windows\\System32.");
 	RtlInitUnicodeString(&CommandLine, (PWSTR)L"\"C:\\Windows\\System32\\svchost.exe\"");
 
 	PRTL_USER_PROCESS_PARAMETERS ProcessParameters = NULL;

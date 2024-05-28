@@ -20,7 +20,7 @@ func Generate_impersonated_path(target_path string) string{
 	underTopLevelDirectory := filepath.Join(targetFilePathSplit[len(targetFilePathSplit)-1])
 
 	// Build the impersonated path
-	impersonatedPath := filepath.Join(topLevelDirectory+" ", underTopLevelDirectory)
+	impersonatedPath := filepath.Join(topLevelDirectory+".", underTopLevelDirectory)
 	return Nt_path(impersonatedPath)
 }
 
